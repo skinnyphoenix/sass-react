@@ -1,0 +1,19 @@
+@mixin flexbox() {
+  display: flex;
+}
+
+@mixin flexboxCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-justify-content($value) {
+  justify-content: $value;
+}
+
+@mixin max-width($width) {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+}

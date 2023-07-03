@@ -1,0 +1,41 @@
+// from 0px to 767px -- XS (Mobile)
+// from 768 to 1023px -- S (Tablet)
+// from 1024 to 1439px -- M (Laptop)
+// from 1440 to 1919px -- L (Desktop)
+// from 1920 to  ∞  -- XL (Larger Screen)
+
+$mobile: 0px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px;
+$largerScreen: 1920px;
+
+@mixin xs {
+  @media only screen and (min-width: $mobile) and (max-width: #{$tablet - 1}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) and (max-width: #{$laptop - 1}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: $laptop) and (max-width: #{$desktop - 1}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) and (max-width: #{$largerScreen - 1}) {
+    @content;
+  }
+}
+
+@mixin largerScreen {
+  @media only screen and (min-width: $largerScreen) {
+    @content;
+  }
+}

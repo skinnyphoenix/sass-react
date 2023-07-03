@@ -1,0 +1,49 @@
+@import "./scss/global.scss";
+@import "./scss/helpers/mixins.scss";
+@import "./scss/helpers/resolutions.scss";
+@import "./scss/helpers/fn/fn.scss";
+
+$colorText: lightcoral;
+
+body {
+  background-color: $colorBG;
+  min-width: 80%;
+  height: 100vh;
+}
+
+.container {
+  @include flexbox();
+  @include flex-justify-content(center);
+  .list1 {
+    background-color: lightgreen;
+    height: 30vh;
+    width: 100%;
+    color: $colorText;
+    margin: $margin;
+  }
+}
+
+.wrapper {
+  @include max-width(1920px);
+  background-color: rgba(20, 20, 119, 0.503);
+
+  @include xs {
+    background: red;
+  }
+
+  @include tablet {
+    background: purple;
+  }
+
+  @include laptop {
+    background: yellow;
+  }
+
+  @include desktop {
+    background: blue;
+  }
+
+  @include largerScreen {
+    background: pink;
+  }
+}
