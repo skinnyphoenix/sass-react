@@ -1,0 +1,21 @@
+@import "./columnsFn.scss";
+
+.col-1 {
+  width: column(1);
+  background-color: yellow;
+}
+
+.col-2 {
+  width: column(2);
+  background-color: red;
+}
+
+.col-3 {
+  width: column(3);
+  background-color: blue;
+}
+
+.col-3 {
+  width: column(4);
+  background-color: lightcoral;
+}

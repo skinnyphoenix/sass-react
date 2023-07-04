@@ -1,0 +1,18 @@
+@import "../fonts/typography.scss";
+
+%heading {
+  font-family: $font-secondary;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+%paragraph {
+  font-family: $fontPrimary;
+  font-weight: 400;
+}
+
+%boldText {
+  font-family: $fontPrimary;
+  font-weight: 400;
+}

@@ -12,6 +12,11 @@
   justify-content: $value;
 }
 
+@mixin flex-justify-content-space-between($value) {
+  display: flex;
+  justify-content: $value;
+}
+
 @mixin max-width($width) {
   max-width: 460px;
   width: 100%;

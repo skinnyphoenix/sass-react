@@ -2,6 +2,10 @@
 @import "./scss/helpers/mixins.scss";
 @import "./scss/helpers/resolutions.scss";
 @import "./scss/helpers/fn/fn.scss";
+@import "../src/scss/fonts/fonts.scss";
+@import "./scss/fonts/typography.scss";
+
+@import "./scss/columns/columns.scss";
 
 $colorText: lightcoral;
 
@@ -11,6 +15,16 @@ body {
   height: 100vh;
 }
 
+//Headings
+.headings__ {
+  @include flexbox();
+  @include flexboxCenter();
+  flex-direction: column;
+  gap: 15px;
+}
+//End Headings
+
+//Container Test Heading - Test max Width
 .container {
   @include flexbox();
   @include flex-justify-content(center);
@@ -21,8 +35,42 @@ body {
     color: $colorText;
     margin: $margin;
   }
+  background-color: colorShade($primary, 0%);
+  display: none;
+}
+//End Container Test
+
+// .container__column {
+//   width: 100%;
+//   display: flex;
+//   flex-wrap: wrap;
+//   text-align: center;
+// }
+
+.wrapperColumn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
+.wrapperColumn__2 {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.wrapperColumn__3 {
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+//Test Media-Query in SASS
 .wrapper {
   @include max-width(1920px);
   background-color: rgba(20, 20, 119, 0.503);
@@ -47,3 +95,4 @@ body {
     background: pink;
   }
 }
+//End Test Media-Query
