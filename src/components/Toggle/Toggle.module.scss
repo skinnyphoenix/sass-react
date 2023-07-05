@@ -1,0 +1,35 @@
+@import "../../scss/variables/colors.scss";
+.InputToggle {
+  position: relative;
+  display: inline-flex;
+  width: 60px;
+  height: 30px;
+  background-color: red;
+
+  .input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked + .toggle {
+      background-color: green;
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    background: $primary;
+    border-radius: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: red;
+    }
+  }
+}

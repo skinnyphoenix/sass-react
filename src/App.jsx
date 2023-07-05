@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import "./App.scss";
+import Buttons from "./components/Buttons";
+import Toggle from "./components/Toggle";
 
 function App() {
   return (
@@ -12,13 +14,12 @@ function App() {
           <p className="paragraph__test">Paragraph</p>
           <div className="wrapper">Element max width test</div>
         </div>
-
         {/* <ul className="list1">
           <li>Lista 1</li>
           <li>Lista 2</li>
         </ul> */}
       </div>
-      <div className="container__column">
+      {/* <div className="container__column">
         <div className="wrapperColumn">
           <div className="col-1">Col-1</div>
           <div className="col-1">Col-1</div>
@@ -56,7 +57,13 @@ function App() {
           <div className="col-3">Col-3</div>
           <div className="col-3">Col-3</div>
         </div>
-      </div>
+      </div> */}
+      <h3>Buttons</h3>
+      <Buttons label="Go to" icon iconLeft fill size="xl" />
+      <Buttons label="Go to" icon iconLeft fill size="md" />
+      <Buttons label="Go to" icon iconLeft fill size="sm" />
+
+      <Toggle />
     </>
   );
 }

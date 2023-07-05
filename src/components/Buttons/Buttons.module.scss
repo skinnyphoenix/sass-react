@@ -1,0 +1,47 @@
+@import "../../scss/helpers/mixins.scss";
+@import "../../scss/variables/colors.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.Buttons {
+  width: 14%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+
+  &:iconleft {
+    flex-direction: row-reverse;
+  }
+
+  &.fill {
+    @include buttonFill(fill);
+  }
+
+  &.outline {
+    @include buttonFill(outline);
+  }
+
+  &.xl {
+    @include btn-size(xl);
+  }
+
+  &.md {
+    @include btn-size(md);
+  }
+
+  &.sm {
+    @include btn-size(sm);
+  }
+
+  &.square {
+    border-radius: 50%;
+    width: rem(48px);
+    height: rem(48px);
+  }
+}

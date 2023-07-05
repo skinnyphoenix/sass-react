@@ -9,6 +9,16 @@
 
 $colorText: lightcoral;
 
+* {
+  padding: 3px;
+  font-family: "Inter", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: $colorBG;
   min-width: 80%;
