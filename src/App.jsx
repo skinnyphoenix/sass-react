@@ -3,6 +3,9 @@ import "./App.css";
 import "./App.scss";
 import Buttons from "./components/Buttons";
 import Toggle from "./components/Toggle";
+import InputText from "./components/Form";
+import InputPassword from "./components/Form/InputPassword";
+import Select from "./components/Form/Select";
 
 function App() {
   return (
@@ -58,12 +61,32 @@ function App() {
           <div className="col-3">Col-3</div>
         </div>
       </div> */}
-      <h3>Buttons</h3>
+      {/* <h3>Buttons</h3>
       <Buttons label="Go to" icon iconLeft fill size="xl" />
       <Buttons label="Go to" icon iconLeft fill size="md" />
       <Buttons label="Go to" icon iconLeft fill size="sm" />
 
-      <Toggle />
+      <Toggle /> */}
+
+      <InputText
+        id={"name"}
+        name="Insert your name here"
+        placeholder="Your Name"
+        label={"Insert your name here"}
+        errorMessage={"Please, insert your name correctly."}
+        error={false}
+      />
+
+      <InputPassword
+        id={"password"}
+        name="Insert your password here"
+        placeholder="Insert your password here"
+        label={"Insert your password here"}
+        errorMessage={"Wrong Password"}
+        error={false}
+      />
+
+      <Select />
     </>
   );
 }
