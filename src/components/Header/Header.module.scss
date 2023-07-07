@@ -1,0 +1,41 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+}
+
+.containerHeader {
+  position: fixed;
+  background-color: rgb(222, 200, 204);
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuItem {
+  position: relative;
+  list-style-type: none;
+  display: flex;
+
+  &.label {
+    cursor: pointer;
+  }
+}
+
+.MenuItem_dropdown {
+  opacity: 0;
+  visibility: hidden;
+
+  &__open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.Menu {
+  background-color: yellow;
+}

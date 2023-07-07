@@ -6,22 +6,23 @@ import Toggle from "./components/Toggle";
 import InputText from "./components/Form";
 import InputPassword from "./components/Form/InputPassword";
 import Select from "./components/Form/Select";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <div className="headings__">
           <h1 className="heading1">Heading 1</h1>
           <h2 className="heading2">Heading 2</h2>
           <p className="paragraph__test">Paragraph</p>
           <div className="wrapper">Element max width test</div>
-        </div>
-        {/* <ul className="list1">
+        </div> */}
+      {/* <ul className="list1">
           <li>Lista 1</li>
           <li>Lista 2</li>
         </ul> */}
-      </div>
+      {/* </div> */}
       {/* <div className="container__column">
         <div className="wrapperColumn">
           <div className="col-1">Col-1</div>
@@ -68,7 +69,7 @@ function App() {
 
       <Toggle /> */}
 
-      <InputText
+      {/* <InputText
         id={"name"}
         name="Insert your name here"
         placeholder="Your Name"
@@ -86,7 +87,9 @@ function App() {
         error={false}
       />
 
-      <Select />
+      <Select /> */}
+
+      <Header />
     </>
   );
 }
